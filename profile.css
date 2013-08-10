@@ -1,0 +1,174 @@
+@import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+#profile {
+    width: 980px;
+	height: 1200px;
+    margin: 40px auto;
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	margin-left: -480px;
+}
+/* User */
+#user {
+    display: inline-block;
+    width: 230px;
+    box-shadow: 0 3px 10px -3px gray;
+    height: 408px;
+}
+#user > img {
+	padding: 5px;
+}
+#user .wrap {
+    width: 190px;
+	height: 112px;
+    margin: 0 auto;
+}
+#user p {
+    font-size: 11px;
+	display: inline-block;
+}
+#user .wrap div {
+	display: block;
+	height: 27px;
+}
+p.left{
+	line-height: 11px;
+	float: left;
+	font-weight: bold;
+}
+#user p.right {
+	float: right;
+	margin-top:-4px;
+}
+#url p:nth-child(2) {
+	border: 1px solid black;
+	color: gray;
+	padding: 0 6px;
+
+}
+#social img {
+	display: inline;
+}
+
+/* about */
+#about {
+	display: inline-block;
+	width: 415px;
+	margin-left: 25px;	
+    vertical-align: top;
+}
+h1 {
+	font-size: 2em;
+	font-family: 'Nothing You Could Do', cursive;
+}
+#about p:nth-child(2) {
+	font-size: 10px;
+	text-transform: uppercase;
+	padding-top:;
+	padding: 7px 0;
+}
+#about p:nth-child(3) {
+    text-transform: uppercase;
+    background: rgb(231, 231, 231);
+}
+#about a {
+	text-decoration: underline;
+	color: blue;
+}
+#about a:hover {
+	cursor:pointer;
+}
+
+/* contact */
+#contact {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	margin-right: 116px;
+    top: 0;
+}
+#contact button {
+	color: white;
+	background: #97D373;
+	box-shadow: inset 0 0px 0px #ffe50b, inset 0 -15px 10px #65A342;
+	border: 1px solid green;
+}
+
+/* ad */
+#ad {
+	
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    top: 110px;
+}
+
+/* thumbnails */
+#thumbnails {
+    display: inline-block;
+    width: 700px;
+    position: absolute;
+    top: 377px;
+    right: 0;
+}
+#thumbnails div {
+	display: inline-block;
+}
+#thumbnails div.icons {
+	display: block;
+}
+#thumbnails button {
+	width: 27px;
+	height: 63px;
+	border-radius: 20px;
+	box-shadow: none;
+	background: none;
+	border: 1px solid black;
+	margin-top: 52px;
+}
+#thumbnails button:first-child {
+	margin-left: -32px;
+}
+#thumbnails button:first-child:before {
+	content: "<";
+}
+#thumbnails button:nth-child(3):before {
+	content: ">";
+}
+
+/*verifications*/
+.box {
+    border-radius: 10px;
+    border: 1px solid rgb(190, 190, 206);
+    box-shadow: inset 0 1px 35px 4px rgb(213, 213, 213);
+    background: white;
+}
+#verifications {
+	width: 230px;
+    margin-top: 24px;
+    height: 305px;
+}
+#verifications .header {
+    font-size: 1.3em;
+}
+.linked {
+	height: 39px;
+	position: relative;
+	width: 195px;
+	margin: 13px auto;
+	border-bottom: 1px solid gray;
+}
+.linked p {
+	font-size: .8em;
+}
+.linked p:nth-child(2) {
+	font-size: .7em;
+}
+.linked img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.linked:last-child {
+	border: none;
+}
