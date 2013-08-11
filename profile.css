@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
 #profile {
     width: 980px;
-	height: 1200px;
+	height: 1222px;
     margin: 40px auto;
 	display: inline-block;
 	position: relative;
@@ -24,7 +24,7 @@
     margin: 0 auto;
 }
 #user p {
-    font-size: 11px;
+    font-size: .7em;
 	display: inline-block;
 }
 #user .wrap div {
@@ -62,7 +62,7 @@ h1 {
 	font-family: 'Nothing You Could Do', cursive;
 }
 #about p:nth-child(2) {
-	font-size: 10px;
+	font-size: .7em;
 	text-transform: uppercase;
 	padding-top:;
 	padding: 7px 0;
@@ -114,8 +114,12 @@ h1 {
 #thumbnails div {
 	display: inline-block;
 }
+
 #thumbnails div.icons {
 	display: block;
+	position: absolute;
+	z-index:1;
+	margin-left: 52px;
 }
 #thumbnails button {
 	width: 27px;
@@ -135,12 +139,21 @@ h1 {
 #thumbnails button:nth-child(3):before {
 	content: ">";
 }
+#thumbnails .bar {
+    height: 26px;
+    width: 675px;
+    background: gray;
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+    z-index: 0;
+}
 
 /*verifications*/
 .box {
     border-radius: 10px;
     border: 1px solid rgb(190, 190, 206);
-    box-shadow: inset 0 1px 35px 4px rgb(213, 213, 213);
+    box-shadow: inset 0 1px 35px 4px rgba(213, 213, 213, 0.4);
     background: white;
 }
 #verifications {
@@ -148,27 +161,147 @@ h1 {
     margin-top: 24px;
     height: 305px;
 }
-#verifications .header {
+.header {
     font-size: 1.3em;
+	padding-left: 16px;
+	margin-top: 5px;
+	border-bottom: 1px solid gray;
 }
 .linked {
-	height: 39px;
+	height: 25px;
 	position: relative;
-	width: 195px;
-	margin: 13px auto;
+	width: 230px;
 	border-bottom: 1px solid gray;
+	padding: 13px 0;
 }
 .linked p {
 	font-size: .8em;
+	margin-left: 18px;
+	margin-top: -4px;
 }
 .linked p:nth-child(2) {
 	font-size: .7em;
 }
 .linked img {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 13px;
+    top: 12px;
 }
 .linked:last-child {
 	border: none;
+}
+
+/* skills */
+#skills {
+    width: 230px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.skill {
+	height: 25px;
+	position: relative;
+	width: 206px;
+	border-bottom: 1px solid gray;
+	padding: 13px 0;
+	padding: 13px;
+}
+.skill p:first-child {
+	font-size: .9em;
+	display: inline;
+	margin-top: -6px;
+	position: absolute;
+}
+.skill:last-child {
+	border: none;
+}
+.cRating {
+	height: 8px;
+}
+.cRating img {
+	display: inline-block;
+}
+.cRating p {
+    display: inline-block;
+    font-size: .7em;
+}
+.sRating {
+	height: 8px;
+}
+.sRating img {
+	display: inline-block;
+}
+.sRating p {
+    display: inline-block;
+    font-size: .7em;
+}
+/* info */
+#info {
+    width: 720px;
+	height: 630px;
+    left: 263px;
+    position: absolute;
+    top: 588px;
+}
+#tabs {
+    border-bottom: 1px solid gray;
+    height: 45px;
+}
+#tabs .wrap {
+    line-height: 45px;
+    margin: 0 auto;
+    width: 656px;
+}
+#tabs a {
+	text-decoration: none;
+	color: black;
+	padding-left: 48px;
+}
+#rating {
+	position: relative;
+	padding: 22px 41px
+}
+#rating > p {
+	font-weight: bold;
+	font-size: .9em;
+}
+.rating {
+	height: 17px;
+}
+.rating p {
+	display: inline-block;
+	text-decoration: underline;
+	color: blue;
+	font-size: .7em;
+}
+.rating img {
+	display: inline-block;
+}
+#avgRating {
+	float: right;
+	display: inline-block;
+	position: absolute;
+	top: 22px;
+	left: 195px;
+}
+#avgRating p:first-child {
+	font-weight: bold;
+	font-size: .9em;
+}
+#stars {
+	display: inline-block;
+}
+#avgRating p:last-child {
+    display: inline;
+    font-size: .7em;
+    width: 120px;
+}
+#reviews {
+	width: 668px;
+	margin: -9px auto;
+}
+.review p {
+	display: inline-block;
+	width: 550px;
+	padding-left: 36px;
 }
